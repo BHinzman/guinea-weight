@@ -1,0 +1,143 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8e8; /* Light yellowish background */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none'%3E%3C!-- Peas --%3E%3Ccircle cx='50' cy='50' r='15' fill='%234caf50'/%3E%3Ccircle cx='47' cy='47' r='4' fill='%23ffffff' fill-opacity='0.5'/%3E%3Ccircle cx='350' cy='200' r='15' fill='%234caf50'/%3E%3Ccircle cx='347' cy='197' r='4' fill='%23ffffff' fill-opacity='0.5'/%3E%3Ccircle cx='100' cy='380' r='15' fill='%234caf50'/%3E%3Ccircle cx='97' cy='377' r='4' fill='%23ffffff' fill-opacity='0.5'/%3E%3C!-- Carrots --%3E%3Cpath d='M180 60 C 195 80, 200 140, 190 160 C 170 140, 165 80, 180 60' fill='%23ff7043'/%3E%3Cpath d='M177 60 C 160 30, 200 30, 183 60 M 170 40 C 180 10, 190 10, 190 40 M 180 50 C 170 20, 195 20, 185 50 M 175 35 C 185 15, 195 15, 190 35' stroke='%234caf50' stroke-width='2'/%3E%3Cpath d='M80 240 C 95 260, 100 320, 90 340 C 70 320, 65 260, 80 240' fill='%23ff7043'/%3E%3Cpath d='M77 240 C 60 210, 100 210, 83 240 M 70 220 C 80 190, 90 190, 90 220 M 80 230 C 70 200, 95 200, 85 230 M 75 215 C 85 195, 95 195, 90 215' stroke='%234caf50' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Form styles */
+#weight-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#weight-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+#weight-form input {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#weight-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#weight-form button:hover {
+    background-color: #45a049;
+}
+
+/* Chart styles */
+#chart-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Table styles */
+#weight-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#weight-table th, #weight-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+#weight-table th {
+    background-color: #ff7043;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#weight-table tr:nth-child(even) {
+    background-color: rgba(255, 248, 225, 0.8);
+}
+
+#weight-table tr:hover {
+    background-color: rgba(255, 236, 179, 0.9);
+}
+
+#weight-table button {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#weight-table button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+#weight-table button:first-of-type:hover {
+    background-color: #45a049;
+}
+
+#weight-table button:last-of-type {
+    background-color: #ff7043;
+    color: white;
+}
+
+#weight-table button:last-of-type:hover {
+    background-color: #f4511e;
+}
+
+/* Error message styles */
+#error-message {
+    background-color: rgba(255, 235, 238, 0.9);
+    border: 1px solid #ffcdd2;
+    color: #b71c1c;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
